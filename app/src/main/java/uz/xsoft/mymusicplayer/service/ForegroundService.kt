@@ -11,9 +11,15 @@ import android.os.IBinder
 import android.util.Log
 import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.cancel
 import uz.xsoft.mymusicplayer.R
 
 class ForegroundService : Service() {
+    private val scope = CoroutineScope(Dispatchers.IO + Job())
+
     override fun onBind(intent: Intent?): IBinder? = null
     private val CHANNEL_ID ="MY_MUSIC"
     private var _mediaPlayer : MediaPlayer? =null
@@ -86,6 +92,7 @@ class ForegroundService : Service() {
 
     override fun onDestroy() {
         _mediaPlayer = null
+        scope.cancel()
         Log.d("TTT","onDestroy")
     }
 
