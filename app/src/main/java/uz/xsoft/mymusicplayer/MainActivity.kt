@@ -1,20 +1,13 @@
 package uz.xsoft.mymusicplayer
 
-import android.app.Notification
-import android.content.Intent
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.widget.Button
-import android.widget.Toast
-import androidx.lifecycle.Observer
-import uz.xsoft.mymusicplayer.service.ActionEnum
-import uz.xsoft.mymusicplayer.service.BackgroundService
-import uz.xsoft.mymusicplayer.service.EventBus
-import uz.xsoft.mymusicplayer.service.ForegroundService
+import dagger.hilt.android.AndroidEntryPoint
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+@AndroidEntryPoint
+class MainActivity : AppCompatActivity(R.layout.activity_main)
+
+
+/*    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -68,4 +61,4 @@ class MainActivity : AppCompatActivity() {
             stopService(intent)
         }*/
     }
-}
+}*/

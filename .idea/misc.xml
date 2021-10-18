@@ -5,6 +5,10 @@
       <map>
         <entry key="..\:/bootcamp_lessons/MyMusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/bootcamp_lessons/MyMusicPlayer/app/src/main/res/layout/notification_layout.xml" value="0.2421875" />
+        <entry key="..\:/bootcamp_lessons/MyMusicPlayer2/app/src/main/res/drawable/ic_music.xml" value="0.25" />
+        <entry key="..\:/bootcamp_lessons/MyMusicPlayer2/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
+        <entry key="..\:/bootcamp_lessons/MyMusicPlayer2/app/src/main/res/layout/item_music.xml" value="0.2421875" />
+        <entry key="..\:/bootcamp_lessons/MyMusicPlayer2/app/src/main/res/layout/screen_play_list.xml" value="0.2421875" />
       </map>
     </option>
   </component>
